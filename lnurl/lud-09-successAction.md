@@ -9,6 +9,7 @@ Spec: [LUD-09](https://github.com/lnurl/luds/blob/luds/09.md)
 | Wallet | Should Support | Tested | Notes |
 |--------|:--------------:|:------:|-------|
 | [Alby Go](https://getalby.com/products/alby-go) | YES | Pass | Description + "Open Link" button |
+| [Aqua](https://www.aquawallet.io/) | YES | Pass | successAction URL & description display after transaction and persist in transaction history |
 | [Blink](https://www.blink.sv/) | YES | Pass | |
 | [Blitz](https://blitz-wallet.com/) | YES | Pass | Opens URL in in-app WebView, tested by Blitz team |
 | [Breez](https://breez.technology/) | YES | Pass | Tested with Misty Breez |
@@ -36,7 +37,6 @@ Spec: [LUD-09](https://github.com/lnurl/luds/blob/luds/09.md)
 | Wallet | Should Support | Notes |
 |--------|:--------------:|-------|
 | [Blixt](https://blixtwallet.github.io/) | YES | Description + URL link + Copy/Open buttons in code |
-| [Aqua](https://www.aquawallet.io/) | NO | Has data model but no UI rendering of successAction |
 | [Electrum](https://electrum.org/) | NO | No successAction handling in code |
 | [Muun](https://muun.com/) | NO | No LNURL-pay code found |
 | [ShockWallet](https://shock.network) | NO | Passes data through but no UI rendering |
@@ -51,13 +51,13 @@ Spec: [LUD-09](https://github.com/lnurl/luds/blob/luds/09.md)
 
 ## Summary
 
-- **Pass (7):** Alby Go, Blink, Blitz, Breez, Phoenix, Wallet of Satoshi, Zeus
+- **Pass (8):** Alby Go, Aqua, Blink, Blitz, Breez, Phoenix, Wallet of Satoshi, Zeus
 - **Fail (11):** Bitkit, Bitnob, Blue Wallet, Coinos, Evento, Fedi, Flash, Lexe, Minibits, Strike, Tether Wallet
 - **N/A (4):** Blockstream Green, Cake Wallet, Primal, River
 - **Should support, untested (1):** Blixt
-- **Should NOT support (6):** Aqua, Cake Wallet, Electrum, Lexe, Muun, ShockWallet
+- **Should NOT support (5):** Cake Wallet, Electrum, Lexe, Muun, ShockWallet
 - **Unknown (8):** Remaining closed-source or no-code-found wallets (includes Machankura)
 
 ## Last updated
 
-2026-04-03
+2026-05-22
