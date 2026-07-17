@@ -16,6 +16,7 @@ If you as an app developer know to look for these domain-specific URI's, you cou
 | [Alby Go](https://getalby.com/products/alby-go) | [alby:](https://github.com/getAlby/go/blob/5a0f24c0bedceedc0514e4a81af50ba78859f4fb/lib/link.ts#L8) | [alby](https://github.com/getAlby/go/blob/5a0f24c0bedceedc0514e4a81af50ba78859f4fb/lib/link.ts#L8) |
 | [Amber App](https://amber.app/amberwallet) |  |  |
 | [Aqua](https://aqua.net/) |  |  |
+| [Bey Wallet](https://github.com/Bey-Wallet/BeyWallet) | [bey-wallet](https://github.com/Bey-Wallet/BeyWallet/blob/main/app.json#L8) | [bey-wallet](https://github.com/Bey-Wallet/BeyWallet/blob/main/app.json#L8) |
 | [Bipa](https://bipa.app/) |  |  |
 | [Bitkit](https://bitkit.to/) | [bitkit:lightning:](https://github.com/synonymdev/bitkit-android/blob/38018018248c8100e6ad204cc62d5b844ad67723/app/src/main/AndroidManifest.xml#L94) | [bitkit](https://github.com/synonymdev/bitkit-ios/blob/11ac9870b989be4f9380a2c8ff92d235fb76ed2a/Bitkit/Info.plist#L13) |
 | [Bitnob](https://bitnob.com/) |  |  |
