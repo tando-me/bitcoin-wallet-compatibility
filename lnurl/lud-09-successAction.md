@@ -9,7 +9,7 @@ Spec: [LUD-09](https://github.com/lnurl/luds/blob/luds/09.md)
 | Wallet | Should Support | Tested | Notes |
 |--------|:--------------:|:------:|-------|
 | [Alby Go](https://getalby.com/products/alby-go) | YES | Pass | Description + "Open Link" button |
-| [Aqua](https://www.aquawallet.io/) | YES | Pass | successAction URL & description display after transaction and persist in transaction history |
+| [Aqua](https://aqua.net/) | YES | Pass | successAction URL & description display after transaction and persist in transaction history |
 | [Blink](https://www.blink.sv/) | YES | Pass | |
 | [Blitz](https://blitz-wallet.com/) | YES | Pass | Opens URL in in-app WebView, tested by Blitz team |
 | [Breez](https://breez.technology/) | YES | Pass | Tested with Misty Breez |
