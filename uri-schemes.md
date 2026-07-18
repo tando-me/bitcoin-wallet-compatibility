@@ -32,6 +32,7 @@ If you as an app developer know to look for these domain-specific URI's, you cou
 | [Electrum](https://electrum.org/) | [lightning:](https://github.com/spesmilo/electrum/blob/28bbb4bdda6ee1c17577bd63b49ecddc0f076149/contrib/android/bitcoin_intent.xml#L7) |  |
 | [Fedi](https://www.fedi.xyz/) | [fedi:](https://github.com/fedixyz/fedi/blob/e29f732ede5ad735ca05c5c2282bee5e1e774307/ui/native/android/app/src/main/AndroidManifest.xml#L57) | [fedi](https://github.com/fedixyz/fedi/blob/e29f732ede5ad735ca05c5c2282bee5e1e774307/ui/native/ios/FediReactNative/Info.plist#L28) |
 | [Flash](https://getflash.io/) | flash: | [flash](https://github.com/lnflash/flash-mobile/blob/2d053ba553bd552cf5bfc7dd91c6deb646ec4546/ios/LNFlash/Info.plist#L46C13-L46C18) |
+| [Grimm](https://github.com/grimm-labs/grimm-mobile-app) | [GrimmApp:](https://github.com/grimm-labs/grimm-mobile-app/blob/fa6c5b250ca23ed76c4fe8a6c90ef2ea28d01743/android/app/src/main/AndroidManifest.xml#L33) + [lightning:](https://github.com/grimm-labs/grimm-mobile-app/blob/fa6c5b250ca23ed76c4fe8a6c90ef2ea28d01743/android/app/src/main/AndroidManifest.xml#L38) | [GrimmApp](https://github.com/grimm-labs/grimm-mobile-app/blob/fa6c5b250ca23ed76c4fe8a6c90ef2ea28d01743/ios/GrimmApp/Info.plist#L30) + [lightning](https://github.com/grimm-labs/grimm-mobile-app/blob/fa6c5b250ca23ed76c4fe8a6c90ef2ea28d01743/ios/GrimmApp/Info.plist#L36) |
 | [Lexe](https://lexe.app) | [lightning:](https://github.com/lexe-app/lexe-public/blob/master/app/android/app/src/main/AndroidManifest.xml#L53) | [lightning](https://github.com/lexe-app/lexe-public/blob/master/app/ios/Runner/Info.plist#L37) |
 | [Machankura](https://8333.mobi/) |  |  |
 | [Minibits](https://www.minibits.cash) | [lightning:](https://github.com/minibits-cash/minibits_wallet/blob/main/android/app/src/main/AndroidManifest.xml#L36) |  |
@@ -48,6 +49,8 @@ If you as an app developer know to look for these domain-specific URI's, you cou
 | [Wallet of Satoshi](https://www.walletofsatoshi.com/) | walletofsatoshi:lightning: | walletofsatoshi |
 | [ZBD](https://zbd.gg/) |  |  |
 | [Zeus](https://zeusln.app/) | [zeusln:](https://github.com/ZeusLN/zeus/blob/8285c4e9b17e70ee5d78d4eee3a3adb963040130/android/app/src/main/AndroidManifest.xml#L78) | [zeusln](https://github.com/ZeusLN/zeus/blob/8285c4e9b17e70ee5d78d4eee3a3adb963040130/ios/zeus/Info.plist#L32) |
+
+> **Note on scheme casing:** Grimm registers its scheme with capital letters (`GrimmApp`). URI schemes are lowercase per RFC 3986 and most parsers/launchers normalize them to lowercase, while Android intent-filter scheme matching is case-sensitive -- so a lowercased `grimmapp:...` link may fail to open the app on Android. Wallet devs: register schemes in lowercase.
 
 
 
