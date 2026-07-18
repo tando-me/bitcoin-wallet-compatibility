@@ -37,6 +37,7 @@ Spec: [LUD-09](https://github.com/lnurl/luds/blob/luds/09.md)
 | Wallet | Should Support | Notes |
 |--------|:--------------:|-------|
 | [Blixt](https://blixtwallet.github.io/) | YES | Description + URL link + Copy/Open buttons in code |
+| [Bey Wallet](https://github.com/Bey-Wallet/BeyWallet) | NO | Cashu wallet with narrow LN-melt support. [lnurlService.ts](https://github.com/Bey-Wallet/BeyWallet/blob/main/src/services/lnurlService.ts) reads only `data.pr` from the LNURL callback; zero occurrences of `successAction` in the repo. Bech32 `LNURL1...` strings also unsupported |
 | [Electrum](https://electrum.org/) | NO | No successAction handling in code |
 | [Muun](https://muun.com/) | NO | No LNURL-pay code found |
 | [ShockWallet](https://shock.network) | NO | Passes data through but no UI rendering |
@@ -55,9 +56,9 @@ Spec: [LUD-09](https://github.com/lnurl/luds/blob/luds/09.md)
 - **Fail (11):** Bitkit, Bitnob, Blue Wallet, Coinos, Evento, Fedi, Flash, Lexe, Minibits, Strike, Tether Wallet
 - **N/A (4):** Blockstream Green, Cake Wallet, Primal, River
 - **Should support, untested (1):** Blixt
-- **Should NOT support (5):** Cake Wallet, Electrum, Lexe, Muun, ShockWallet
+- **Should NOT support (6):** Bey Wallet, Cake Wallet, Electrum, Lexe, Muun, ShockWallet
 - **Unknown (8):** Remaining closed-source or no-code-found wallets (includes Machankura)
 
 ## Last updated
 
-2026-05-22
+2026-07-17
